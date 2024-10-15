@@ -32,4 +32,7 @@ fun LazyColumn(
 #### Passing trailing lambdas
 Selon la convention Kotlin, si le dernier paramètre d'une fonction est une fonction, une expression lambda passée comme argument correspondant peut être placée en dehors des parenthèses.
 Si le lambda est le seul argument de l'appel, les parenthèses peuvent être omises.
+#### Underscore for unused variables
+Le trait de soulignement pour les variables inutilisées. Si le paramètre lambda est inutilisé, vous pouvez placer un trait de soulignement à la place de son nom.
+
 
