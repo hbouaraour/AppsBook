@@ -28,3 +28,8 @@ fun LazyColumn(
     content: LazyListScope.() -> Unit
 ): Unit
 ```
+
+#### Passing trailing lambdas
+Selon la convention Kotlin, si le dernier paramètre d'une fonction est une fonction, une expression lambda passée comme argument correspondant peut être placée en dehors des parenthèses.
+Si le lambda est le seul argument de l'appel, les parenthèses peuvent être omises.
+

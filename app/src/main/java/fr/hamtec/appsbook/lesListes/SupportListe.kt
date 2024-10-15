@@ -25,16 +25,32 @@ fun PersonList(people: List<Person>) {
     LazyColumn {
         items(
             people.size,
-            itemContent =  { index ->
-            val person = people[index]
-            Text(text = "Name: ${person.name}, Age: ${person.age}")
-        }
+            itemContent = { index ->
+                val person = people[index]
+                Text(text = "Name: ${person.name}, Age: ${person.age}")
+            }
         )
     }
 }
 
-
-
+@Composable
+fun PersonListv2(people: List<Person>) {
+    LazyColumn {
+        items(people.size) { index ->
+            val person = people[index]
+            Text(text = "Name: ${person.name}, Age: ${person.age}")
+        }
+    }
+}
+@Composable
+fun PersonListv3(people: List<Person>) {
+    LazyColumn {
+        items(people.size) {
+            val person = people[it]
+            Text(text = "Name: ${person.name}, Age: ${person.age}")
+        }
+    }
+}
 @Preview(showBackground = true)
 @Composable
 private fun MyAppPreview() {
