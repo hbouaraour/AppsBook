@@ -13,6 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import fr.hamtec.appsbook.buttonTypeRadio.BasicRadioButtonExample
 import fr.hamtec.appsbook.champsFormulaires.Name
+import fr.hamtec.appsbook.lesListes.SecondLazy
+import fr.hamtec.appsbook.lesListes.firstLazy
 import fr.hamtec.appsbook.ui.theme.AppsBookTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +23,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppsBookTheme {
-                BasicRadioButtonExample()
+                SecondLazy()
             }
         }
     }
